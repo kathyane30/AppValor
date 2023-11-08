@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(237, 252, 252);
+            font: normal 15pt lora;
+        }
+        h1{
+            color: rgb(55, 191, 191);
+            font: 20pt;
+        }
+    </style>
+   
+</head>
+<body>
+    <h1>VALORES</h1>
+    <section id="janela">
+        <p>Resultados</p>
+    </section>
+    <script>
+            let a = Number(window.prompt('Digite o numero: '))
+            let text = window.document.getElementById('janela')
+            text.innerHTML = `<p> Valor inteiro=${a} <br> Raiz quadrada= ${Math.sqrt(a)} <br>
+                Numero elevado ao quadrado=${Math.pow(a,2)} <br>
+                Elevado a 3=${Math.pow(a,3)}<br>Sucessor=${a+1}<br> Antecessor=${a-1}</p>`
+                
+                document.getElementById("resultados").innerHTML = "Resultados: " + resultados
+    </script>
+</body>
+</html>
